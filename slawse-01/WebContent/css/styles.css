@@ -1,0 +1,106 @@
+@CHARSET "UTF-8";
+
+@font-face {
+    font-family: "Neuropol";
+    src: url(fonts/neuropol/neuropol.ttf) format("truetype");
+}
+
+body {
+	background: black;
+	color: white;
+	font-family: arial narrow;
+}
+
+#header {
+	height: 15%;
+	text-align: center;
+}
+
+#header-logo {
+	width: 200px;
+	height: 200px;
+	border: 2px solid white;
+	background-color: black;
+	font-family: neuropol;
+	display: inline-block;
+}
+
+.company-name-header {
+	font-size: 250%;
+}
+
+#header-logo-hr {
+	width: 90%;
+}
+
+#menu-header {
+	text-align: center;
+	padding: 2% 0% 2% 0%
+}
+
+.menu-header-item {
+	padding: 0% 1% 0% 1%
+}
+
+#content {
+	height: 70%;
+	display: table;
+}
+
+.content-first {
+	width: 40%;
+	display: table-cell;
+}
+
+.content-second {
+	width: 19%;
+	text-align:center;
+	display: table-cell;
+	background-color: white;
+	color: black;
+	padding: 30px;
+	
+}
+
+.content-third {
+	width: 35%;
+	display: table-cell;
+	text-align: right;	
+}
+
+#footer {
+	height: 15%;
+	display: table;
+	width: 100%;
+}
+
+#footer-logo {
+	display: table-cell;
+	font-family: neuropol;
+	vertical-align: middle;
+	text-align: center;
+	width: 40%;
+}
+
+.company-name-footer {
+	font-size: 200%;	
+}
+
+#menu-footer {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	width: 20%;
+}
+
+#contact {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	width: 40%;
+}
+
+#credits {
+	text-align: center;
+	padding: 2% 0% 2% 0%
+}
