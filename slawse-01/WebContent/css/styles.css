@@ -1,8 +1,8 @@
 @CHARSET "UTF-8";
 
 @font-face {
-    font-family: "Neuropol";
-    src: url(fonts/neuropol/neuropol.ttf) format("truetype");
+	font-family: "Neuropol";
+	src: url(fonts/neuropol/neuropol.ttf) format("truetype");
 }
 
 a {
@@ -12,7 +12,7 @@ a {
 .active {
 	color: grey;
 	pointer-events: none;
-  	cursor: default;
+	cursor: default;
 }
 
 .non-active {
@@ -23,6 +23,8 @@ body {
 	background: black;
 	color: white;
 	font-family: arial narrow;
+	max-width: 1500px;
+	margin: 0px auto;
 }
 
 #header {
@@ -57,41 +59,145 @@ body {
 }
 
 #content {
-	height: 70%;
-	padding: 0% 10% 0% 10%;
+		height: 70%;
+}
+
+#content-table {
+	margin:auto;
 }
 
 #content2 {
 	height: 70%;
-	padding: 1% 10% 2% 10%;
-	background-color: grey;
-	margin: 0% 0% 2% 0%; 
-}
-
-.content-first {
-	width: 35%;
-	background-image: url("../graphic/businessman-2056022_960_720.jpg");
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: right;
+	padding: 1% 10% 1% 10%;
+	background-color: rgb(244,243,243);
+	color: black;
+	margin: 0% 0% 2% 0%;
 }
 
 .content-second {
-	width: 30%;
-	text-align:center;
-	background-color: white;
+	text-align: center;
+	background-color: rgb(244,243,243);
 	color: black;
 	padding: 4%;
 	vertical-align: middle;
-	
 }
 
-.content-third {
-	width: 35%;
-	background-image: url("../graphic/email-2056028_960_720.jpg");
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: left;
+#footer-logo {
+	display: table-cell;
+	font-family: neuropol;
+	vertical-align: middle;
+	text-align: center;
+	width: 40%;
+}
+
+#contact {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	width: 40%;
+}
+
+@media only screen and (min-width: 1400px) {
+	#content {
+		padding: 0% 10% 0% 10%;
+	}
+	
+	.content-first {
+		width: 42%;
+		background-image: url("../graphic/businessman-2056022_960_720.jpg");
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: right;
+	}
+	.content-second {
+		width: 16%;
+	}
+	.content-third {
+		width: 42%;
+		background-image: url("../graphic/email-2056028_960_720.jpg");
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: left;
+	}
+}
+
+@media only screen and (max-width: 1399px) {
+	#content {
+		padding: 0% 10% 0% 10%;
+	}
+	
+	.content-first {
+		width: 38%;
+		background-image: url("../graphic/businessman-2056022_960_720.jpg");
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: right;
+	}
+	.content-second {
+		width: 24%;
+	}
+	.content-third {
+		width: 38%;
+		background-image: url("../graphic/email-2056028_960_720.jpg");
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: left;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	#content {
+		padding: 0% 10% 0% 10%;
+	}
+	
+	.content-first {
+		width: 35%;
+		background-image: url("../graphic/businessman-2056022_960_720.jpg");
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: right;
+	}
+	.content-second {
+		width: 30%;
+	}
+	.content-third {
+		width: 35%;
+		background-image: url("../graphic/email-2056028_960_720.jpg");
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: left;
+	}
+}
+
+@media only screen and (max-width: 1023px) {
+	#content {
+		padding: 0% 5% 0% 5%;
+	}
+	
+	.content-first {
+		width: 0%;
+	}
+	.content-second {
+		width: 100%;
+	}
+	.content-third {
+		width: 0%;
+	}
+	
+	#footer-logo {
+		display: none;
+	}
+	
+	#contact {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 599px) {
+	#content {
+		padding: 0% 0% 0% 0%;
+	}
+	
 }
 
 #subcontent {
@@ -104,16 +210,8 @@ body {
 	width: 100%;
 }
 
-#footer-logo {
-	display: table-cell;
-	font-family: neuropol;
-	vertical-align: middle;
-	text-align: center;
-	width: 40%;
-}
-
 .company-name-footer {
-	font-size: 200%;	
+	font-size: 200%;
 }
 
 #menu-footer {
@@ -121,13 +219,6 @@ body {
 	vertical-align: middle;
 	text-align: center;
 	width: 20%;
-}
-
-#contact {
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-	width: 40%;
 }
 
 #credits {
